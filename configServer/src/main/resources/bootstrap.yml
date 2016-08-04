@@ -3,11 +3,15 @@
 server:
   port: 8888
 spring:
+  application:
+    name: config-server
   cloud:
     config:
       server: 
         git:
-          uri: 
-  application:
-    name: config-server
+          uri: https://github.com/logeshduraisamy/cloud/config-repo
+          username: logeshduraisamy90@gmail.com
+          password: l0g3$h28
+          
+  
         
