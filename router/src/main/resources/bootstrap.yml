@@ -1,0 +1,9 @@
+---
+server:
+  port: 8880
+spring:
+  application:
+    name: router
+  cloud:
+    config:
+      uri: http://localhost:8880
