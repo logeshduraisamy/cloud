@@ -1,0 +1,15 @@
+---
+server:
+  port: 8761
+  
+spring:
+  application:
+    name: discovery-client
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles: local
+  
+  
+
+  
