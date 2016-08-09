@@ -3,15 +3,18 @@
 server:
   port: 8888
 spring:
+  profiles:
+    active: native, default
   application:
     name: config-server
   cloud:
     config:
       server:
-        #native:
-          #search-locations: file:///C:/dev/workspaces/config-repo
-        git:
-          uri: file:///C:/dev/workspaces/config-repo 
+        native:
+          search-locations: classpath:config/
+        #git:
+          #uri: file:///C:/dev/workspaces/config-repo
+          #uri: file:classpath:config/ 
           #uri: https://github.com/logeshduraisamy/config-repo
           #username: logeshduraisamy90@gmail.com
           #password: l0g3$h28
